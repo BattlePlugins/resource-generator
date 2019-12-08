@@ -21,13 +21,11 @@ object BlockTypeGenerator {
             if (!file.exists())
                 file.createNewFile()
 
-
             val writer = BufferedWriter(FileWriter(file))
             for (mat in Material.values()) {
                 if (!mat.isBlock)
                     continue
 
-                // noinspection deprecation
                 if (mat.isLegacy)
                     continue
 
