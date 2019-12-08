@@ -31,7 +31,7 @@ object ItemTypeGenerator {
 
                 writer.write(
                     "public static final ItemType ${mat.key.key.toUpperCase()}"
-                            + " = BlockRegistry.REGISTRY.fromKey(NamespacedKey.minecraft(\"${mat.key.key}\"));"
+                            + " = ItemRegistry.REGISTRY.fromKey(NamespacedKey.minecraft(\"${mat.key.key}\"));"
                 )
                 writer.newLine()
             }
