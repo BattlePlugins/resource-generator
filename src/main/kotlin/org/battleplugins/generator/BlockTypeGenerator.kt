@@ -31,7 +31,7 @@ object BlockTypeGenerator {
 
                 writer.write(
                     "public static final BlockType ${mat.key.key.toUpperCase()}"
-                            + " = BlockRegistry.REGISTRY.fromKey(NamespacedKey.minecraft(\"${mat.key.key}\").get());"
+                            + " = BlockRegistry.REGISTRY.fromKey(NamespacedKey.minecraft(\"${mat.key.key}\")).get();"
                 )
                 writer.newLine()
             }
