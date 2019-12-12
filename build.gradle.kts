@@ -6,17 +6,16 @@ plugins {
 }
 
 group = "org.battleplugins.generator"
-version = "1.0-SNAPSHOT"
+version = "1.1.0"
 
 repositories {
     mavenCentral()
-    maven(url = "https://repo.battleplugins.org/artifactory/libs-release")
     maven(url = "https://hub.spigotmc.org/nexus/content/repositories/public")
 }
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    compile("org.bukkit", "bukkit", "1.14.4-R0.1-SNAPSHOT")
+    compile("org.bukkit", "bukkit", "1.15-R0.1-SNAPSHOT")
     testCompile("junit", "junit", "4.12")
 }
 
