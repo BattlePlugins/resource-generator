@@ -23,15 +23,12 @@ object ItemTypeGenerator {
 
             val writer = BufferedWriter(FileWriter(file))
             for (mat in Material.values()) {
-                if (mat.isBlock)
-                    continue
-
                 if (mat.isLegacy)
                     continue
 
                 writer.write(
                     "public static final ItemType ${mat.key.key.toUpperCase()}"
-                            + " = ItemRegistry.REGISTRY.fromKey(NamespacedKey.minecraft(\"${mat.key.key}\")).get();"
+                            + " = getOrDefault(\"${mat.key.key}\");"
                 )
                 writer.newLine()
             }
