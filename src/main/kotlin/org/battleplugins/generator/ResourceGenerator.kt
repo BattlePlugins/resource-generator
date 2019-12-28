@@ -4,4 +4,5 @@ package org.battleplugins.generator
 fun main() {
     ItemTypeGenerator.generateItems()
     BlockTypeGenerator.generateBlocks()
+    EntityTypeGenerator.generateEntities()
 }
