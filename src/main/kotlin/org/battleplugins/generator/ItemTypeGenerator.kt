@@ -26,6 +26,9 @@ object ItemTypeGenerator {
                 if (mat.isLegacy)
                     continue
 
+                if (!mat.isItem)
+                    continue
+
                 writer.write(
                     "public static final ItemType ${mat.key.key.toUpperCase()}"
                             + " = getOrDefault(\"${mat.key.key}\");"
