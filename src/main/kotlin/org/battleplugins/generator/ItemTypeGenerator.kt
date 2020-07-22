@@ -22,7 +22,7 @@ object ItemTypeGenerator {
                 file.createNewFile()
 
             val writer = BufferedWriter(FileWriter(file))
-            for (mat in Material.values()) {
+            for (mat in Material.values().sortedBy { it.name }) {
                 if (mat.isLegacy)
                     continue
 
