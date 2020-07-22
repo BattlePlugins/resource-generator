@@ -15,7 +15,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    compile("org.bukkit", "bukkit", "1.15-R0.1-SNAPSHOT")
+    compile("org.spigotmc", "spigot-api", "1.16.1-R0.1-SNAPSHOT")
     testCompile("junit", "junit", "4.12")
 }
 
